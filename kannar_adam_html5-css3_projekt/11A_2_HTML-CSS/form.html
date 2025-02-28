@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML5-CSS3 - Weboldal Project</title>
+    <meta name="author" content="Saját Név">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo" title="logo"><a href="index.html"><img src="images/premo-logo.png" alt="Premo Logo"
+                    title="Premo Logo" width="190"></a></div>
+        <div id="banner-content">
+            <a href="index.html">
+                <h1 title="Header">&#171;HTML5-CSS3 Gyakorlatok&#187;</h1>
+            </a>
+        </div>
+    </header>
+    <div id="container">
+        <nav>
+            <h2>&#171;nav&#187;</h2>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Főoldal</a></li>
+                    <li><a href="#nogo">CSS Animáció</a>
+                        <ul>
+                            <li><a href="animation.html">CSS Animáció</a>
+                            <li><a href="form.html">HTML Űrlap</a>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section>
+            <h2>&#171;section&#187;</h2>
+            <article>
+                <h2>&#171;HTML Űrlap&#187;</h2>
+<form action="" name="rendeles">
+<fieldset>
+    <legend>Megrendelő adatai</legend>
+    <p><label for="">Név:<input type="text" name="nev" id="nev"></label>
+    <small>Vezetéknév Keresztnév</small></p>
+    <p>
+        <label for="">Telefon: <input type="tel" name="tel" size="17"></label>
+    </p>
+</fieldset>
+<fieldset>
+    <legend>A pizza mérete</legend>
+    <p>
+       <p><label for=""><input type="radio" name="meret" value="kicsi" checked>kicsi</label></p> 
+        <p><label for=""><input type="radio" name="meret" value="nagy">nagy</label></p>
+    </p>
+</fieldset>
+<fieldset>
+    <legend>Feltétek</legend>
+    <p><label for=""><input type="checkbox" name="feltet1" value="sonka" checked>sonka</label></p>
+    <p><label for=""><input type="checkbox" name="feltet2" value="sajt">sajt</label></p>
+    <p><label for=""><input type="checkbox" name="feltet3" value="gomba">gomba</label></p>
+</fieldset>
+<p><label for="">Mennyiség: <input type="number" name="mennyiseg"></label></p>
+<p><label for="">Kért kiszállítási idő: <input type="date" name="kiszallitas"></label></p>
+<p><label for="">Egyéb kívánságok: <textarea name="egyeb" id="egyeb"></textarea></label></p>
+<button type="reset">Alaphelyzet</button>
+<button type="submit">Elküldés</button>
+</form>
+            </article>
+        </section>
+    </div>
+    <footer>
+        <h2>&#171;footer&#187;</h2>
+    </footer>
+</body>
+</html>

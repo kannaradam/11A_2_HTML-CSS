@@ -1,0 +1,82 @@
+#animation-container
+{
+    margin-top: 20px;
+    padding:20px;
+    border: 1px dashed red;
+    width: 655px;
+    height:700px;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1
+{
+    text-align: center;
+}
+.container
+{
+    width: 810px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.heart
+{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: red;
+    transform: rotate(45deg) translate(10px, 10px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    animation: ani 1s linear infinite; /*A heart konténerre vonatkozó animáció beállítások*/
+}
+.heart:before
+{
+    content:'';
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    top: -50%;
+    left: 0;
+    border-radius: 50%;
+}
+.heart:after
+{
+    content:'';
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    border-radius: 50%;
+}
+/*Az animáció kulcskockái*/
+@keyframes ani 
+{
+    0%{
+        transform: rotate(45deg) translate(10px, 10px) scale(1);
+    }
+    25%{
+        transform: rotate(45deg) translate(10px, 10px) scale(1);
+    }
+    30%{
+        transform: rotate(45deg) translate(10px, 10px) scale(1.8);
+    }
+    50%{
+        transform: rotate(45deg) translate(10px, 10px) scale(1.2);
+    }
+    70%{
+        transform: rotate(45deg) translate(10px, 10px) scale(1.8);
+    }
+    90%{
+        transform: rotate(45deg) translate(10px, 10px) scale(1);
+    }
+    100%{
+        transform: rotate(45deg) translate(10px, 10px) scale(1);
+    }
+}
