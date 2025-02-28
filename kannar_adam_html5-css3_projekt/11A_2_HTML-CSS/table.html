@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML5-CSS3 - Weboldal Project</title>
+    <meta name="author" content="Saját Név">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        table,
+        th,
+        td
+        {
+            border: 1px solid black;
+            padding: 5px 10px;
+            border-collapse: collapse;
+        }
+    th
+    {
+        color: white;
+        background-color: cornflowerblue;
+        text-align: center;
+    }
+    .table-container
+    {
+        width: 650px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+    table tr:nth-child(2)
+    {
+        background-color: lightcyan;
+    }
+    </style>
+</head>
+
+<body>
+    <!--Gipsz Jakab-->
+    <header>
+        <div id="logo" title="logo"><a href="index.html"><img src="images/premo-logo.png" alt="Premo Logo"
+                    title="Premo Logo" width="190"></a></div>
+        <div id="banner-content">
+            <a href="index.html">
+                <h1 title="Header">&#171;HTML5-CSS3 Gyakorlatok&#187;</h1>
+            </a>
+        </div>
+    </header>
+    <div id="container">
+        <nav>
+            <h2>&#171;nav&#187;</h2>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Főoldal</a></li>
+                    <li><a href="#nogo">CSS Animáció</a>
+                        <ul>
+                            <li><a href="animation.html">CSS Animáció</a>
+                            <li><a href="form.html">HTML Űrlap</a>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section>
+            <h2>&#171;section&#187;</h2>
+            <article>
+                <h2>&#171;Táblázat&#187;</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>név</th>
+                                <th>foglalkozás</th>
+                                <th>lakcím</th>
+                                <th>telefon</th>
+                                <th>email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Joe Doe</td>
+                                <td>webfejlesztő</td>
+                                <td>Baker str. 1.</td>
+                                <td>111-222</td>
+                                <td>joe.doe@email.com</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Gipsz Jakab</td>
+                                <td>programozó</td>
+                                <td>Pékek utca 10.</td>
+                                <td>222-333-444</td>
+                                <td>gipsz.jakab@email.com</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Bél Flóra</td>
+                                <td>gasztroenterológus</td>
+                                <td>Vak Béla utca 1.</td>
+                                <td>666-777-888</td>
+                                <td>bel.flora@email.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+        </section>
+    </div>
+    <footer>
+        <h2>&#171;footer&#187;</h2>
+    </footer>
+</body>
+
+</html>
